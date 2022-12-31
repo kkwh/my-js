@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<input id="bam" type="button" value="night" onclick="
+var tico = document.querySelector('body')
+if(document.querySelector('#bam').value === 'night') {
+tico.style.backgroundColor = 'black';
+tico.style.color = 'white';
+document.querySelector('#bam').value = 'day';
+
+}
+else {
+tico.style.backgroundColor = 'white';
+tico.style.color = 'black';
+document.querySelector('#bam').value = 'night';
+
+var alist = document.querySelectorAll('a');
+var i = 0;
+while(i < alist.length) {
+    alist[i].style.color = 'blue';
+    i = i + 1;
+}
+}
+">
+<p>
+  Jurriën David Norman Timber (born 17 June 2001)
+  is a Dutch professional
+  footballer who plays as a defender for Eredivisie club Ajax and the
+  Netherlands national team. Mainly a centre-back, he can also play as
+  a right-back.
+  Timber joined Ajax's youth academy in 2014, from Feyenoord.
+  He made his first-team debut in March 2020 and has won two Eredivisie titles
+  and one KNVB Cup. <strong>He won <u>the Marco van Basten Award</u>
+  in 2022.</strong>
+</p>
+
+
+<input  type="button" value="night" onclick="
+if(this.value === 'night') {
+document.querySelector('body').style.backgroundColor = 'black';
+document.querySelector('body').style.color = 'white';
+this.value = 'day';
+}
+else {
+document.querySelector('body').style.backgroundColor = 'white';
+document.querySelector('body').style.color = 'black';
+this.value = 'night';
+
+}
+">
+  </body>
+</html>
