@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<title>Jurriën Timber</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css"
+</head>
+
+<body>
+ <h1><a href="nindex.html">Dutch prospect</a></h1>
+ <input type="button" value="Night" onclick="
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';
+  ">
+  <input type="button" value="Day"
+  onclick="
+   document.querySelector('body').style.backgroundColor = 'white';
+   document.querySelector('body').style.color = 'black';
+   ">
+   <input id="night_day" type="button" value="night" onclick="
+   if(document.querySelector('#night_day').value === 'night'){
+   document.querySelector('body').style.backgroundColor = 'black';
+   document.querySelector('body').style.color = 'white';
+   document.querySelector('#night_day').value = 'day';
+
+   var alist = document.querySelectorAll('a');
+   var i = 0;
+   while(i < alist.length) {
+       alist[i].style.color = 'powderblue';
+       i = i + 1;
+   }
+ } else {
+   document.querySelector('body').style.backgroundColor = 'white';
+   document.querySelector('body').style.color = 'black';
+   document.querySelector('#night_day').value = 'night';
+
+   var alist = document.querySelectorAll('a');
+   var i = 0;
+   while(i < alist.length) {
+       alist[i].style.color = 'blue';
+       i = i + 1;
+   }
+ }
+ ">
+
+ <div id="grid">
+<ul>
+ <li>1. <a href="n1.html" class="saw" id="active">Cody Gakpo</a></li>
+ <li>2. <a href="n2.html" class="saw">Xavi Simons</a></li>
+ <li>3. <a href="n3.html">Jurrien Timber</a></li>
+</ul>
+<div id="article">
+<h2>Jurriën Timber</h2>
+<p><a href="https://english.ajax.nl/teams/ajax-1/j-timber/" target="_blank"
+title="the official website">Jurriën David Norman Timber (born 17 June 2001)</a>
+is a Dutch professional
+footballer who plays as a defender for Eredivisie club Ajax and the
+Netherlands national team. Mainly a centre-back, he can also play as
+a right-back.
+Timber joined Ajax's youth academy in 2014, from Feyenoord.
+He made his first-team debut in March 2020 and has won two Eredivisie titles
+and one KNVB Cup. <strong>He won <u>the Marco van Basten Award</u>
+in 2022.</strong></p>
+<img src="timber.jpg" width="80%">
+<p>
+  Timber made 29 appearances for the Netherlands at youth international level.
+He was a member of the under-17 team that won the 2018 UEFA European Under-17
+Championship. He made his senior international debut in June 2021.
+</p>
+</div>
+</div>
+<body>
+</html>
